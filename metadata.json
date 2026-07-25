@@ -1,0 +1,6 @@
+{
+  "name": "Dija Fashion",
+  "description": "Premier Women's Ethnic & Fusion Wear Boutique in Erode, Tamil Nadu with WhatsApp Ordering & Admin Inventory Management",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
