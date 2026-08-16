@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Search, Phone, Heart, ShoppingBag, Lock, Sparkles, X, Globe, Star, MessageCircle } from 'lucide-react';
 import { STORE_INFO } from '../data/initialData';
 import { Language } from '../types';
+import { getGeneralWhatsAppUrl } from '../utils/whatsapp';
 
 interface HeaderProps {
   searchQuery: string;
@@ -62,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <div className="hidden sm:flex items-center gap-4 text-xs text-[#EADBB2]">
             <a 
-              href={`https://wa.me/${STORE_INFO.whatsappNumber}`} 
+              href={getGeneralWhatsAppUrl()} 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-white flex items-center gap-1 transition-colors"

@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, MessageCircle, Instagram, Clock, Mail, ShieldCheck, Heart } from 'lucide-react';
 import { STORE_INFO } from '../data/initialData';
 import { Language } from '../types';
+import { getGeneralWhatsAppUrl, getWholesaleWhatsAppUrl } from '../utils/whatsapp';
 
 interface FooterProps {
   language: Language;
@@ -40,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({ language, onOpenAdmin }) => {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href={`https://wa.me/${STORE_INFO.whatsappNumber}`}
+                href={getGeneralWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full bg-white/10 hover:bg-emerald-500 hover:text-white flex items-center justify-center transition-colors"
@@ -66,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ language, onOpenAdmin }) => {
             <ul className="space-y-2 text-xs text-gray-300">
               <li><a href="#" className="hover:text-amber-200 transition-colors">Home & New Arrivals</a></li>
               <li><a href="#reviews" className="hover:text-amber-200 transition-colors">Customer Reviews (5.0★)</a></li>
-              <li><a href={`https://wa.me/${STORE_INFO.whatsappNumber}`} className="hover:text-amber-200 transition-colors">Wholesale & Reseller Catalog</a></li>
+              <li><a href={getWholesaleWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-amber-200 transition-colors">Wholesale & Reseller Catalog</a></li>
               <li><button onClick={onOpenAdmin} className="hover:text-amber-200 transition-colors text-left">Store Owner Portal Login</button></li>
             </ul>
           </div>

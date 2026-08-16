@@ -2,7 +2,7 @@ import React from 'react';
 import { X, ShoppingBag, Trash2, MessageCircle, Truck, ArrowRight } from 'lucide-react';
 import { Product, Language } from '../types';
 import { STORE_INFO } from '../data/initialData';
-import { formatINR } from '../utils/whatsapp';
+import { formatINR, getCleanWhatsAppNumber } from '../utils/whatsapp';
 
 export interface InquiryBagItem {
   product: Product;
@@ -41,7 +41,7 @@ export const InquiryTrayModal: React.FC<InquiryTrayModalProps> = ({
     text += `*Total Estimated Amount:* ₹${totalAmount.toLocaleString('en-IN')}\n`;
     text += `Please confirm stock availability and local delivery details in Erode!`;
 
-    return `https://wa.me/${STORE_INFO.whatsappNumber}?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/${getCleanWhatsAppNumber()}?text=${encodeURIComponent(text)}`;
   };
 
   return (

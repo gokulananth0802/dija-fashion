@@ -5,7 +5,7 @@ export const STORE_INFO = {
   tagline: "Elegance Redefined • Erode's Trusted Women's Fashion Destination",
   address: '25, Madurai Veeran Kovil Street, KAS Nagar, Karungalpalayam, Erode, Tamil Nadu 638003',
   phone: '+91 88389 55057',
-  whatsappNumber: '91883895057',
+  whatsappNumber: '918838955057',
   instagramHandle: '@dija_fashion_6',
   instagramUrl: 'https://www.instagram.com/dija_fashion_6',
   hours: 'Mon–Sat: 9:30 AM – 8:30 PM',
