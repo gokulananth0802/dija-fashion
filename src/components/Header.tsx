@@ -38,8 +38,8 @@ export const Header: React.FC<HeaderProps> = ({
       ? '🚚 Free Same-Day Local Delivery in Erode Area | 💬 Cash On Delivery Available'
       : '🚚 ஈரோட்டில் இலவச உள்ளூர் டெலிவரி | 💬 கேஷ் ஆன் டெலிவரி வசதி உண்டு',
     language === 'EN'
-      ? '📞 WhatsApp Quick Orders & Video Calling: +91 88389 55057'
-      : '📞 வாட்ஸ்அப் மூலம் உடனடியாக ஆர்டர் செய்ய: +91 88389 55057'
+      ? '📞 WhatsApp Quick Orders & Video Calling: +91 63740 52425'
+      : '📞 வாட்ஸ்அப் மூலம் உடனடியாக ஆர்டர் செய்ய: +91 63740 52425'
   ];
 
   useEffect(() => {
@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="hover:text-white flex items-center gap-1 transition-colors"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
-              <span>WhatsApp: +91 88389 55057</span>
+              <span>WhatsApp: +91 63740 52425</span>
             </a>
             <span className="text-[#0A3A2A]/40">|</span>
             <span className="text-amber-200/90 font-mono">Erode 638003</span>
